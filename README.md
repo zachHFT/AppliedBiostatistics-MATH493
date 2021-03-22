@@ -11,3 +11,7 @@ R Markdown: The Definitive Guide : https://bookdown.org/yihui/rmarkdown/
 R Markdown lessons from R Studio : https://rmarkdown.rstudio.com/
 
 knitr with R Markdown - Karl Broman's website : https://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
+
+Installing R and RStudio : https://rafalab.github.io/dsbook/installing-r-rstudio.html
+
+Getting started with R/RStudio : https://rafalab.github.io/dsbook/getting-started.html
