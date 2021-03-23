@@ -1,0 +1,644 @@
+<html>
+
+<head>
+
+
+<style>
+
+body {
+	background: #FFFFFF;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16;
+	margin-top: 2.5% ; 		 	
+	margin-bottom: 0 ; 		
+	margin-right: 5% ;	 
+	margin-left: 5% ;
+	font-weight: normal
+}
+
+.tablesort {
+	cursor: pointer;
+	behavior: url(tablesort.htc);
+	-moz-binding: url(tablesort.htc);
+}
+
+H1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: rgb(35,35,165);
+	text-align: center
+}
+
+H2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+        background: rgb(35,35,165)
+}
+
+H2.index {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: #000000;
+	margin: 10pt 5%
+}
+
+H3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+        text-decoration: underline;
+	color: rgb(35,35,165)
+}
+
+H4 {
+	font-family: T, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(35,35,165);
+	line-height: 16pt
+}
+
+RCMD {
+        margin-left: 0.5in;
+        font-size: 18;
+	font-family: "Courier New";
+	font-weight: bolder;
+	color: rgb(35,35,165)
+}
+
+RCMD0 {
+        font-size: 18;
+	font-family: "Courier New";
+	font-weight: bolder;
+	color: rgb(35,35,165)
+}
+
+
+LI {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt
+}
+
+A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-decoration: none
+}
+
+.caption {
+	font-style: italic
+}
+
+.title2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #004080
+}
+
+.equation{
+  font-weight: bold;
+}
+
+
+.partitle {
+	font-family:verdana, arial;
+	font-weight: bold
+}
+
+XMP {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt
+}
+
+.function {
+	font-family:courier;
+	color:rgb(50,50,205);
+        font-weight: bold;
+	font-size: 12pt
+}
+
+.command {
+	font-family:verdana, arial;
+	color:red
+}
+
+
+TR {
+	font-family: Arial, Helvetica, Times, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	padding: 0 0
+}
+
+TR.firstline {
+	color: #FFFFFF;
+	background: #000000;
+	text-align:center;
+	font-weight: bold
+}
+TR.ListBackTitle {
+	color: #FFFFFF;
+	background: #000000;
+	text-align:left;
+	font-weight: bold
+}
+TD {
+	background:#FFFFFF;
+	padding: 0 0
+}
+TD.ListBackMain {
+	background: #E0E0E0;
+	padding: 0 0
+}
+TD.firstcolumn {
+	padding: 5 10;
+	background: #C0C0C0;
+	text-align:right
+}
+TD.cellinside {
+	padding: 5 10;
+	background: #FFFFFF;
+	text-align:right
+}
+/* CORRELATION MATRIX TRAFFIC HIGHLIGHT*/
+TD.corvarname {
+	background-color:"#FFFFFF";
+	color:black;
+	height: 1.1cm;
+	text-align: right;
+	font-weight: bold
+}
+TD.corsep {
+	width: 0.5cm
+}
+TD.cordiag {
+	background-color:#fffff;
+	color:white
+}
+TD.cor0 {
+	background-color:"#FFFFFF";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor1 {
+	background-color:"#E6E6E6";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor2 {
+	background-color:"#CCCCCC";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor3 {
+	background-color:"#B3B3B3";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor4 {
+	background-color:"#999999";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor5 {
+	background-color:"#808080";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor6 {
+	background-color:"#666666";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor7 {
+	background-color:"#4D4D4D";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor8 {
+	background-color:"#333333";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor9 {
+	background-color:"#1A1A1A";
+	color:yellow;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor10 {
+	background-color:"#000000";
+	color:yellow;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cellinsideLeft {
+	padding: 5 5;
+	background: #FFFFFF;
+	text-align:left
+}
+
+</style>
+
+
+<title>Statistics for Genomic Data Analysis</title>
+<!--link rel=stylesheet href="TP.css" type="text/css"-->
+</head>
+
+<body bgcolor= #FFFFFF>
+<h1>TP 0: R basics refresher</h1>
+
+<p style='text-align:justify'>
+The purpose of this exercise is to introduce you to using 
+<b><rcmd0>R</rcmd0></b> (or remind you!) with a simple session, 
+and for you to start gaining some facility with 
+<b><rcmd0>R</rcmd0></b> commands; the code here is to get you started.
+You will get the most out of the session if you also do
+some exploring on your own: 
+check the help files for each function to learn
+what default values and optional arguments are there, 
+and try out your own variations. 
+</p>
+
+<p style='text-align:justify'>
+An excellent source of <b><rcmd0>R</rcmd0></b> documentation is the 
+<i>Comprehensive R Archive Network</i>, or <b><rcmd0>CRAN<rcmd0></b>.
+There is a Swiss mirror site at
+<a href="http://cran.ch.r-project.org/">http://cran.ch.r-project.org/</a>.
+If you go to that site, you will find several links under 'Documentation' 
+(the fourth major entry on the left side).
+'Official' documentation is available under 'Manuals'; 
+other helpful documentation is under 'Contributed'.
+</p>
+
+<p style='text-align:justify'>
+To proceed, you will need to start <b><rcmd0>R</rcmd0></b>.
+You can copy/paste the code below at the <rcmd0>R</rcmd0> prompt.
+</p>
+
+<h2>Basic R</h2>
+
+<p style="text-align: justify;">
+<rcmd0>0. Getting help in R.</rcmd0>
+You should become acquainted with the help facility within <b><rcmd0>R</rcmd0></b>, 
+it can be your friend! 
+The basic help command is 
+<rcmd0>help()</rcmd0>;
+within the parentheses 
+<rcmd0>()</rcmd0>
+you would type (inside of double quotes) the name of a function 
+whose help file you want to see, <i>e.g.</i>
+<rcmd0>help("mean")</rcmd0>.
+If you don't know the exact command name, use 
+<rcmd0>help.search()</rcmd0>,
+with the name of the concept inside double quotes within the parentheses. 
+</p>
+
+<p style='text-align:justify'>
+<rcmd0>1. Working with data.</rcmd0>
+<b><rcmd0>R</rcmd0></b> has a number of functions to create data vectors, including:
+<rcmd0>c()</rcmd0>, <rcmd0>seq()</rcmd0>, <rcmd0>rep()</rcmd0>.
+Find out what each of these do, and make some data vectors of your choice using each.
+</p>
+
+<p style='text-align:justify'>
+To get some practice using statistical functions 
+and performing small calculations in <b><rcmd0>R</rcmd0></b>, 
+create a <rcmd0>weight</rcmd0> and corresponding <rcmd0>height</rcmd0>
+vector for computing <i>body mass index</i> 
+(<rcmd0>bmi</rcmd0>) (this example is from
+the book <rcmd0>Introductory Statistics with R</rcmd0> by Peter Dalgaard):
+</p>
+
+<p>
+<b>
+<rcmd>weight <- c(60,72,57,90,95,72)</rcmd>
+<br>
+<rcmd>height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)</rcmd>
+<br>
+<rcmd>bmi <- weight / height^2</rcmd>
+<br>
+<rcmd>bmi </rcmd>
+<rcmd># Type this in R to see the computed values</rcmd>
+<br>
+<rcmd>plot(height,weight)</rcmd>
+<rcmd># A basic scatterplot</rcmd>
+</span>
+</b>
+</p>
+
+<p style='text-align:justify'>
+The <rcmd0>#</rcmd0>
+sign indicates a <rcmd0>comment</rcmd0>: 
+anything occurring after this sign on a line is <i>ignored</i> by 
+<b><rcmd0>R</rcmd0></b> 
+(but can be very useful in programming at it provides a means for
+documenting your code).
+</p>
+
+<p style='text-align:justify'>
+These data vectors are too small to really require summaries; 
+we can quickly generate some artificial data to get practice using 
+<b><rcmd0>R</rcmd0></b> 
+for simple graphical and numerical summaries.
+<b><rcmd0>R</rcmd0></b> can generate (pseudo) random numbers from different 
+probability distributions; here is an example:
+</p>
+
+<p>
+<b>
+<rcmd>simdata <- rchisq(100,8) </rcmd>
+</b>
+</p>
+
+<p style='text-align:justify'>
+Now, make a number of different histograms for this same
+data set, varying the number of bars (also called 'bins' or 'cells').
+It will be easiest to see several at once if you first set up 
+the plotting region for multiple plots, as in the first line below:
+</p>
+
+<p>
+<b>
+<rcmd>par(mfrow=c(2,2))</rcmd>
+<br>
+<rcmd>hist(simdata) </rcmd>
+<rcmd># this is the default version</rcmd>
+<br>
+<rcmd>hist(simdata,freq=FALSE)</rcmd>
+<rcmd># what's the difference here? </rcmd>
+<br>
+<rcmd>hist(simdata,freq=FALSE,breaks=2) </rcmd>
+<rcmd># experiment with breaks</rcmd>
+<br>
+<rcmd>bps <- c(0,2,4,6,8,10,15,25) </rcmd>
+<rcmd># make your own breakpoints</rcmd>
+<br>
+<rcmd>hist(simdata,freq=FALSE,breaks=bps)</rcmd>
+</b>
+</p>
+
+<p style='text-align:justify'>
+You should also make a boxplot of this simulated data set for a
+different type of visualization: 
+<rcmd0>boxplot(simdata)</rcmd0>.
+Approximate the 5 number summary 
+<rcmd0>(min, Q1, median, Q3, max)</rcmd0> by looking
+at the boxplot, and then obtain the 5 number summary in 
+<b><rcmd0>R</rcmd0></b> with 
+<rcmd0>quantile(simdata)</rcmd0>.
+</p>
+
+<p style='text-align:justify'>
+Obtain other summary statistics for your simulated data: mean,
+standard deviation (SD), median, interquartile range (IQR), median absolute
+deviation from the median (MAD).
+If you don't know which <b><rcmd0>R</rcmd0></b> 
+functions there are to compute these, use 
+<rcmd0>help.search()</rcmd0>.
+</p>
+
+<h2>hellung data</h2>
+
+<p style='text-align:justify'>
+It is a little more interesting to look at real data.
+Load the package <b><rcmd0>ISwR</rcmd0></b>, and examine the variables in 
+<rcmd0>hellung</rcmd0> (don't forget to read the help file).
+</p>
+
+<p>
+<b>
+<rcmd>library(ISwR)</rcmd>
+<br>
+<rcmd>?hellung</rcmd>
+<br>
+<rcmd>data(hellung)</rcmd>
+<br>
+<rcmd>attach(hellung)</rcmd>
+</b>
+</p>
+
+<p style='text-align:justify'>
+You can find the variable names with 
+<rcmd0>names(hellung)</rcmd0>,
+and can summarize the data set with 
+<rcmd0>summary(hellung)</rcmd0>.
+Which of the variables does it <i>not</i> make sense to summarize like this? 
+Make a boxplot of the variable 
+<rcmd0>conc</rcmd0>.
+Now, make side by side boxplots of 
+<rcmd0>conc</rcmd0>,
+one for each value of 
+<rcmd0>glucose</rcmd0>;
+do the same with 
+<rcmd0>diameter</rcmd0> (we will learn more about this notation soon): 
+</p>
+
+<p>
+<b>
+<rcmd>boxplot(conc ~ glucose)</rcmd>
+<br>
+<rcmd>boxplot(diameter ~ glucose)</rcmd>
+</b>
+</p>
+
+<p style='text-align:justify'>
+Does the distribution (pattern of variability) of either
+variable appear to depend on the presence or absence of glucose?
+Do we have enough information to decide
+whether glucose is causing any difference?
+</p>
+
+<h2>Simulated microarray data</h2>
+
+<p style="text-align: justify;">
+Now, we will get a little closer to the scale of microarray data 
+by simulating a much larger data set.
+We will use the normal (Gaussian) distribution <i>for convenience</i> -
+you should not take this to mean that it is realistic for microarray data:
+<b>it is not</b>!
+</p>
+
+<p style="text-align: justify;">
+Usually, preprocessed data values
+are stored in a data matrix or data frame with
+rows representing probes or probe sets (genes) 
+and columns representing mRNA samples (chips).
+Note that this is the transpose of the usual data matrix in statistics,
+where rows represent individuals and columns are for different variables.
+With a microarray, we have measured thousands of variables on each sample,
+but usually only with a relatively small number of samples.
+</p>
+
+<p style="text-align: justify;">
+In order to be able to reproduce results of a simulation experiment,
+it is a good idea to set (or save) a seed value for the random number generator,
+see <rcmd0>?set.seed</rcmd0>.  
+You should set a seed here so that you will be able to reproduce your results,
+you can choose the argument for 
+<rcmd0>set.seed</rcmd0>
+to be your lucky number.
+</p>
+
+<p style="text-align: justify;">
+After you have set the seed, create a (simulated) data matrix of 
+gene expression values with 30,000 rows (genes) and 10 columns (arrays/chips) 
+with (independent) normal random variables.
+Gene expression data are not really independent across different genes,
+or normally distributed either, but we will just pretend here.
+Useful functions here are
+<rcmd0>rnorm</rcmd0> and 
+<rcmd0>matrix</rcmd0>.
+If you want to be fancy, you could attach names to the arrays
+(see <rcmd0>?colnames</rcmd0>). 
+</p>
+
+<p style="text-align: justify;">
+One extremely useful feature of <b><rcmd0>R</rcmd0></b> is its <i>subsetting</i> 
+(or <i>indexing</i>) capability, via the subset operator 
+<rcmd0>[ ]</rcmd0>.
+For example, to access the first column of
+<rcmd0>my.data</rcmd0>, you would type
+<rcmd0>my.data[,1]</rcmd0>; 
+if instead you wanted to see rows 2, 4, and 5, you would type
+<rcmd0>my.data[c(2,4,5),]</rcmd0>.
+Play around with subsetting your large matrix.
+</p>
+
+<p style="text-align: justify;">
+For each single array (column), you can visually assess how closely the data 
+appear to follow the normal distribution with a QQ plot.
+You can set up multiple plots per page (4 here), 
+and change the default plotting character as follows:
+</p>
+
+<p>
+<b>
+<rcmd>par(mfrow=c(2,2),pch=".")</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+(You remembered to read the help for
+<rcmd0>par</rcmd0>, right??)
+If you have called your data matrix 
+<rcmd0>my.data</rcmd0>, 
+you can get a QQ plot for the first array (column) by typing:
+</p>
+
+<p>
+<b>
+<rcmd>qqnorm(my.data[,1])</rcmd>
+<br>
+<rcmd>qqline(my.data[,1])</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+If the data are approximately normally distributed,
+then the points should mostly fall on the line.
+Since we have simulated normally distributed data here,
+deviations from normal are essentially random variation
+(assuming that we trust the random number generator).
+You can look at all 10 QQ plots.
+</p>
+
+<p style="text-align: justify;">
+Say that we are now interested in comparing the distributions of 
+expression values across the different chips.
+Then we might look at side by side boxplots, for example.
+Make the 10 side by side boxplots; 
+if you have called your data matrix 
+<rcmd0>my.data</rcmd0>, you can easily accomplish this by typing
+</p>
+
+<p>
+<b>
+<rcmd>par(mfrow=c(1,1))	</rcmd>
+<rcmd># to get just 1 plot</rcmd>
+<br>
+<rcmd>boxplot(data.frame(my.data))</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+(Remember to read the help for the function 
+<rcmd0>data.frame</rcmd0>).
+</p>
+
+<p style="text-align: justify;">
+Now that you're happy with subsetting (!), 
+redo the boxplots, this time ordering them by their medians 
+(so that the array with the smallest median is first, largest is last).
+Useful functions here are 
+<rcmd0>apply</rcmd0> and
+<rcmd0>order</rcmd0>, along with subsetting.
+It might take you a little while to figure out how to do this,
+but <b>spend some time trying before you click</b> 
+<a href="http://www.lausanne.isb-sib.ch/~darlene/gda/tp/orderbox.html">here</a> 
+to see how I did it.
+</p>
+
+
+<p style='text-align:justify'>
+You will not need to save any <b><rcmd0>R</rcmd0></b> objects that you created 
+(unless you wish to), 
+so feel free to 'clean up' after yourself with 
+<rcmd0>rm()</rcmd0>.
+To remove <i>all</i> objects in your workspace (permanently and
+irreversibly, so be careful!), type 
+<rcmd0>rm(list=ls())</rcmd0>,
+or simply answer 
+<rcmd0>n</rcmd0>
+when asked if you wish to save
+your workspace image.
+This question appears on the screen when you quit <b><rcmd0>R</rcmd0></b>; 
+to quit, type 
+<rcmd0>q()</rcmd0>.
+Before quitting, try just typing 
+<rcmd0>q</rcmd0>
+without any parentheses.
+This might help you to remember that you need the parentheses!
+</p>
+
+<br> &nbsp;
+
+<br>
+
+</body>
+
+</html>
