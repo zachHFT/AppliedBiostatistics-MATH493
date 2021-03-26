@@ -28,9 +28,9 @@ median(simdata)
 IQR(simdata)
 mad(simdata)
 '''
-
-
 '''
+
+
 #Part 2 - Hellung data
 
 #install.packages("ISwR") if not installed yet
@@ -45,8 +45,8 @@ par(mfrow=c(1,2))
 
 boxplot(conc ~ glucose)
 boxplot(diameter ~ glucose)
-'''
 
+'''
 
 # Part 3 - Simulated microarray data
 
@@ -54,7 +54,7 @@ boxplot(diameter ~ glucose)
 set.seed(3)
 
 n = 30000
-my.data = matrix(data = NA, nrow = n, ncol = 10)
+my.data2 = matrix(data = rnorm(300000,0,1), ncol = 10)
 
 # ask if the code below is the correct way to do this
 for (i in (1:10)) {
@@ -76,3 +76,4 @@ boxplot(data.frame(my.data))
 med.order<-order(apply(my.data,2,median)) #see how this works
 
 boxplot(data.frame(my.data[,med.order]))
+'''

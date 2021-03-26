@@ -1,0 +1,529 @@
+
+<!-- saved from url=(0081)https://moodle.epfl.ch/pluginfile.php/2566155/mod_resource/content/4/lab-w05.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Applied Biostatistics</title>
+
+<style>
+body {
+	background: #FFFFFF;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16;
+	margin-top: 2.5% ; 		 	
+	margin-bottom: 0 ; 		
+	margin-right: 5% ;	 
+	margin-left: 5% ;
+	font-weight: normal
+}
+
+.tablesort {
+	cursor: pointer;
+	behavior: url(tablesort.htc);
+	-moz-binding: url(tablesort.htc);
+}
+
+H1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: rgb(35,35,165);
+	text-align: center
+}
+
+H2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+        background: rgb(35,35,165)
+}
+
+H2.index {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: #000000;
+	margin: 10pt 5%
+}
+
+H3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+        text-decoration: underline;
+	color: rgb(35,35,165)
+}
+
+H4 {
+	font-family: T, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(35,35,165);
+	line-height: 16pt
+}
+
+RCMD {
+        margin-left: 0.5in;
+        font-size: 18;
+	font-family: "Courier New";
+	font-weight: bolder;
+	color: rgb(35,35,165)
+}
+
+RCMD0 {
+        font-size: 18;
+	font-family: "Courier New";
+	font-weight: bolder;
+	color: rgb(35,35,165)
+}
+
+
+LI {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt
+}
+
+A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-decoration: none
+}
+
+.caption {
+	font-style: italic
+}
+
+.title2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #004080
+}
+
+.equation{
+  font-weight: bold;
+}
+
+
+.partitle {
+	font-family:verdana, arial;
+	font-weight: bold
+}
+
+XMP {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt
+}
+
+.function {
+	font-family:courier;
+	color:rgb(50,50,205);
+        font-weight: bold;
+	font-size: 12pt
+}
+
+.command {
+	font-family:verdana, arial;
+	color:red
+}
+
+
+TR {
+	font-family: Arial, Helvetica, Times, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	padding: 0 0
+}
+
+TR.firstline {
+	color: #FFFFFF;
+	background: #000000;
+	text-align:center;
+	font-weight: bold
+}
+TR.ListBackTitle {
+	color: #FFFFFF;
+	background: #000000;
+	text-align:left;
+	font-weight: bold
+}
+TD {
+	background:#FFFFFF;
+	padding: 0 0
+}
+TD.ListBackMain {
+	background: #E0E0E0;
+	padding: 0 0
+}
+TD.firstcolumn {
+	padding: 5 10;
+	background: #C0C0C0;
+	text-align:right
+}
+TD.cellinside {
+	padding: 5 10;
+	background: #FFFFFF;
+	text-align:right
+}
+/* CORRELATION MATRIX TRAFFIC HIGHLIGHT*/
+TD.corvarname {
+	background-color:"#FFFFFF";
+	color:black;
+	height: 1.1cm;
+	text-align: right;
+	font-weight: bold
+}
+TD.corsep {
+	width: 0.5cm
+}
+TD.cordiag {
+	background-color:#fffff;
+	color:white
+}
+TD.cor0 {
+	background-color:"#FFFFFF";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor1 {
+	background-color:"#E6E6E6";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor2 {
+	background-color:"#CCCCCC";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor3 {
+	background-color:"#B3B3B3";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor4 {
+	background-color:"#999999";
+	color:black;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor5 {
+	background-color:"#808080";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor6 {
+	background-color:"#666666";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor7 {
+	background-color:"#4D4D4D";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor8 {
+	background-color:"#333333";
+	color:white;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor9 {
+	background-color:"#1A1A1A";
+	color:yellow;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cor10 {
+	background-color:"#000000";
+	color:yellow;
+	width: 1.1cm;
+	height: 1.1cm;
+	text-align: center
+}
+TD.cellinsideLeft {
+	padding: 5 5;
+	background: #FFFFFF;
+	text-align:left
+}
+
+</style>
+
+<script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><style>@media print {#ghostery-tracker-tally {display:none !important}}</style><style id="motion-extension-style">@media print{.no-print,.no-print *{display:none!important}}#motion-intervention-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center;z-index:2147483646}#motion-gmail-widget-iframe{width:35px;height:30px}.motion-no-overflow{overflow:hidden!important}.motion-iframe{z-index:2147483646;border:none;left:inherit;display:flex!important;background-color:transparent}.motion-iframe-hidden{display:none!important}.motion-extension-div{padding:0;margin:0;max-width:none!important;min-width:0!important;width:auto;max-height:none!important;min-height:0!important;height:auto;border:none;box-shadow:none;background-color:transparent;visibility:visible!important}#motion-sidebar-iframe-container{overflow:visible;position:fixed;z-index:2147483646}.motion-sidebar-distracting,.motion-sidebar-distracting-note,.motion-sidebar-general,.motion-sidebar-general-note{height:54px!important;min-height:auto!important;top:170px;right:0}.motion-sidebar-calendar{height:46px!important;width:40px!important;top:170px;right:0}.motion-sidebar-full-hover{height:247px!important;width:40px!important;top:170px;right:0}iframe.motion-sidebar-full-monthly-hover{top:170px;right:0}.motion-sidebar-calendar-hover{height:167px!important;width:40px!important;top:170px;right:0}iframe.motion-sidebar-calendar{height:47px!important}iframe.motion-sidebar-calendar,iframe.motion-sidebar-calendar-hover{width:40px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}iframe.motion-sidebar-calendar-hover{height:167px!important}iframe.motion-sidebar-full-hover{height:247px!important}iframe.motion-sidebar-full-hover,iframe.motion-sidebar-full-monthly-hover{width:40px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}iframe.motion-sidebar-full-monthly-hover{height:269px!important}.motion-sidebar-general{width:54px!important}iframe.motion-sidebar-general{width:54px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}.motion-sidebar-general-note{width:278px!important}iframe.motion-sidebar-general-note{width:278px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}.motion-sidebar-dragging>.motion-drag-icon-container,.motion-sidebar:hover>.motion-drag-icon-container{display:flex}.motion-sidebar{display:flex;flex-direction:row;align-items:center}.motion-sidebar-disabling{right:0!important}.motion-sidebar-dragging{right:0!important;transform:none!important}iframe.motion-sidebar-distracting{width:160px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}iframe.motion-sidebar-distracting-note{width:327px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}#motion-sidebar-iframe{overflow:auto;top:0;right:0;z-index:0;border-radius:.3rem 0 0 .3rem}.motion-reminder{width:350px!important;height:60px!important;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969}#motion-reminder-iframe{overflow:auto;right:0;z-index:0}#motion-reminder-iframe-container{overflow:hidden;position:fixed;top:20px;right:-350px;transition:1s;z-index:2147483646}.motion-right-slide{transition:1s;right:0!important}#motion-account-iframe,#motion-newtab-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center;border:none!important}.motion-no-pointer-events{pointer-events:none!important}.ant-select-dropdown{z-index:100000!important}#motion-calendar-minimized-iframe{width:210px!important;height:60px!important;position:fixed;bottom:20px;right:20px;border-radius:4px}#motion-report-iframe,#motion-share-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center}#motion-disable-popup-iframe-container{overflow:visible;position:fixed;z-index:2147483646;right:230px}#motion-dropdown-iframe{overflow:visible;position:fixed;z-index:2147483646;right:0!important;top:0;width:180px!important;height:0;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969;border-radius:8px 0 0 8px;background-color:#000}#motion-widget-tooltip-iframe{right:45px!important;border-radius:4px;background-color:#272728}#motion-dropdown-inner-iframe,#motion-widget-tooltip-iframe{overflow:visible;position:fixed;z-index:2147483646;top:0;width:200px!important;height:0;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969}#motion-dropdown-inner-iframe{right:182px!important;border-radius:8px 8px 8px 8px}#motion-asana-modal-iframe,#motion-availability-popup-iframe,#motion-browser-icon-modal-iframe,#motion-consolidate-tab-modal-iframe,#motion-edit-schedule-modal-iframe,#motion-edit-sites-modal-iframe,#motion-email-signatures-iframe,#motion-hide-widget-modal-iframe,#motion-intervention-snooze-modal-iframe,#motion-onboard-iframe,#motion-recent-docs-modal-iframe,#motion-refer-iframe,#motion-report-modal-iframe,#motion-schedule-tab-modal-iframe,#motion-search-tab-modal-iframe,#motion-shortcut-modal-iframe,#motion-upgrade-iframe,#motion-view-workspace-modal-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center}#motiontab-availability-popup-iframe,#motiontab-edit-schedule-modal-iframe{height:calc(100% - 112px);width:calc(100vw - 40px)}#motiontab-availability-popup-iframe,#motiontab-consolidate-tab-modal-iframe,#motiontab-edit-schedule-modal-iframe{min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:20px;left:20px;align-items:center;justify-items:center}#motiontab-consolidate-tab-modal-iframe{width:calc(100% - 40px);height:calc(100% - 72px)}#motion-browser-icon-modal-iframe{z-index:1000}#motion-command-iframe,#motion-quicknotes-iframe,#motion-snippet-iframe,#motion-timezone-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center}#motion-confirmation-iframe{bottom:20px;left:20px;width:200px!important;height:54px!important}#motion-confirmation-iframe,#motion-suggestion-iframe{position:fixed;min-width:auto!important;min-height:auto!important}#motion-suggestion-iframe{width:250px!important;height:50px!important;right:0}#motion-new-features-popup-iframe-container{overflow:visible;position:fixed;z-index:2147483646;top:-300px;right:15px}.motion-new-features-slide{transition:1s;top:15px!important}#motion-new-features-popup-iframe{overflow:auto;top:0;width:370px!important;height:370px!important;min-width:auto!important;min-height:auto!important;box-shadow:0 2px 7px 0 rgba(76,85,101,.3);border-radius:8px}#motion-sidebar-badge-iframe-container{overflow:visible;position:fixed;z-index:2147483646;right:54px}#motion-sidebar-badge-iframe{overflow:auto;top:-30px;width:20px!important;height:20px!important;min-width:auto!important;min-height:auto!important;pointer-events:none}#motion-email-iframe-container{overflow:visible;position:fixed;z-index:2147483646;top:calc(100% - 450px);left:calc(100% - 804px)}#motion-quicknotes-input-iframe-container{overflow:visible;position:fixed;z-index:2147483646;top:calc(100% - 500px);right:60px}#motion-email-iframe{height:450px}#motion-email-iframe,#motion-quicknotes-input-iframe{resize:both;overflow:auto;top:0;width:544px;min-width:270px!important;min-height:270px!important;box-shadow:0 6px 15px 0 rgba(0,0,0,.1),0 16px 2rem rgba(0,0,0,.05),0 0 .5px rgba(0,0,0,.1);border-radius:6px;background-color:#202020}#motion-quicknotes-input-iframe{height:500px}#motion-calendar-iframe-container{right:0}#motion-calendar-iframe-container,#motiontab-calendar-iframe-container{overflow:visible;position:fixed;z-index:2147483646;bottom:0;background-color:#1d1d1d}#motiontab-calendar-iframe-container{top:112px;left:20px;right:20px}.motion-calendar-iframe-container-minimized{width:210px!important;height:60px!important;top:calc(100% - 80px)!important;right:20px!important;overflow:hidden!important;transition:.4s;visibility:hidden!important;opacity:0!important;z-index:-100!important;pointer-events:none}#motion-calendar-iframe{overflow:auto;top:0;width:375px;height:100vh!important;min-width:20vw;min-height:100vh!important;max-width:100vw!important;box-shadow:0 0 10px 0 #000;background-color:#1d1d1d}#motiontab-calendar-iframe{overflow:auto;width:100%;height:100%;background-color:#1d1d1d}#motion-generic-notification-iframe{width:100%!important;height:100%!important;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center;pointer-events:none!important;color-scheme:light;z-index:2147483646}#motion-generic-notification-iframe,#motion-notification-iframe{min-width:auto!important;min-height:auto!important;position:fixed}#motion-notification-iframe{bottom:50px;left:-400px;transition:left .3s;z-index:2147483647;overflow:auto;border-radius:4px;width:350px;height:150px;box-shadow:0 0 8px rgba(0,0,0,.93)}.motion-notification-transition{left:25px!important;transition:left .3s}.motion-calendar-reminder{width:410px;height:70px!important;min-width:auto!important;min-height:auto!important;box-shadow:0 0 4px rgba(0,0,0,.93)}#motion-calendar-reminder-iframe{border-radius:4px 0 0 4px;position:fixed;top:20px;right:-410px;transition:1s;z-index:2147483646}#motion-calendar-reminder-template-iframe-container{overflow:hidden;position:fixed;top:95px;right:165px;z-index:2147483646;width:150px!important;height:160px;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969;border-radius:6px}.motion-calendar-reminder-transition{right:0!important;transition:.5s}#motion-calendar-event-iframe,#motion-newtab-calendar-event-iframe{position:fixed;top:-600px;right:-600px;height:350px;width:410px;border-radius:6px;box-shadow:0 0 10px 0 #000}#motion-calendar-sidebar-toggle{position:fixed;top:20px;height:30px;width:30px}.motion-gmail-date{border-bottom:2px solid #2c77e6;cursor:pointer}</style></head>
+
+<body bgcolor="#FFFFFF">
+<h1>Generalized Linear Modeling</h1>
+The purpose of this TP is to practice using <b><rcmd0>R</rcmd0></b> for two types of generalized linear modeling:
+logistic regression and Poisson regression.
+We will apply GLM to two problems with data in the <rcmd0>HSAUR3</rcmd0> package. To carry out these analyses, first load <rcmd0>R</rcmd0> and the <rcmd0>HSAUR3</rcmd0> package.
+<p></p>
+
+As usual, make sure that you read the <b><rcmd0>help</rcmd0></b>
+for any new functions and data that you use.
+<p></p>
+
+<br>
+
+
+
+<h2>Blood plasma data</h2>
+
+<p style="text-align: justify;">
+Load the <rcmd0>plasma</rcmd0> data and read the help for this data set so that you understand the scientific background and question of interest as well as the variables included in the data. Then start off making
+a graphical exploration of the data. Here, we will look at
+<b>conditional density plots</b> of the response variable ESR given each each of the 
+(numerical) explanatory variables fibrinogen and gamma globulin change. 
+</p>
+
+<p>
+<b>
+<rcmd>data("plasma", package = "HSAUR3")</rcmd>
+<br>
+
+<rcmd>layout(matrix(1:2, nrow = 2))
+<br>
+<rcmd>cdplot(ESR ~ fibrinogen, data = plasma)
+<br>
+<rcmd>cdplot(ESR ~ globulin, data = plasma)
+</rcmd></rcmd></rcmd></b>
+</p>
+
+<p style="text-align: justify;">
+The conditional density for each ESR category (smaller or larger than 20) is shown in a different shade,
+with the numerical value on the right hand vertical scale. Here, we can see that <b>higher</b>
+levels of each protein are associated with ESR values above 20, since the conditional 
+probability for ESR bigger than 20 in both plots is larger as we move to the right of the plot horizontally 
+(larger values of fibrinogen/gamma globulin).
+</p>
+
+<p style="text-align: justify;">
+Now, fit a logistic regression model to the data with the <b><rcmd0>glm</rcmd0></b> function,
+including only the single variable <rcmd0>fibrinogen</rcmd0>:
+</p>
+
+<p>
+<b>
+<rcmd>plasma.glm.1 &lt;- glm(ESR ~ fibrinogen, data = plasma, family = binomial())</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+As is the case for the <b><rcmd0>lm</rcmd0></b> function, an intercept term is automatically included
+in the model.
+The <b><rcmd0>family</rcmd0></b> argument for <b><rcmd0>glm</rcmd0></b> specifies
+the distribution of the response - in this case, a binomial distribution.
+The default <b>link</b> function for the binomial family is <b>logistic</b>.
+</p>
+
+<p style="text-align: justify;">
+Apply the <b><rcmd0>summary</rcmd0></b> function to your fitted model to obtain a description
+of the fitting. Is the coefficient for <rcmd0>fibrinogen</rcmd0> significant at the 5% level?
+Interpret the meaning of this coefficient.
+</p>
+
+
+<p style="text-align: justify;">
+You can obtain a 95% confidence interval for the coefficient (make sure to read the help):
+</p>
+
+<p>
+<b>
+<rcmd>confint(plasma.glm.1, parm = "fibrinogen")</rcmd> 
+<br>
+</b>
+</p>
+
+<p>
+Since these values correspond to the <b>log-odds</b>, we can get the <b>odds</b> by
+exponentiating the estimate (subsetting <b><rcmd0>coef</rcmd0></b> according to the
+value that we want; here it is for <rcmd0>fibrinogen</rcmd0> and not the intercept) and confidence interval:
+</p>
+
+<p>
+<b>
+<rcmd>exp(coef(plasma.glm.1)["fibrinogen"])</rcmd>
+<br>
+<rcmd>exp(confint(plasma.glm.1, parm = "fibrinogen"))</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+We can see that the confidence interval is very wide. Can you think of any reason why this might be?
+</p>
+
+<p style="text-align: justify;">
+Now, fit a logistic regression model using both explanatory variables:
+</p>
+
+
+<p>
+<b>
+<rcmd>plasma.glm.2 &lt;- glm(ESR ~ fibrinogen + globulin, data = plasma, family = binomial())</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+and output the results using <b><rcmd0>summary</rcmd0></b>.
+Is the coefficient for gamma globulin significantly different from 0?
+</p>
+
+<p style="text-align: justify;">
+You can perform a likelihood ratio (chi-square) test by subtracting the residual deviance of the
+second (bigger) model from that of the first (smaller) model, then comparing the result to a chi-square distribution
+with degrees of freedom equal to the difference in degrees of freedom between the two models:
+</p>
+
+<p>
+<b>
+<rcmd>anova(plasma.glm.1, plasma.glm.2, test = "Chisq")</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+Here, we see that the <i>p</i>-value is large, meaning that we do <b>not</b> reject
+the null hypothesis that the coefficient for <rcmd0>globulin</rcmd0> is zero.
+</p>
+
+<p style="text-align: justify;">
+Even though we would not include <rcmd0>globulin</rcmd0> in our final model, for purposes
+of illustration we will use model 2 to obtain predicted values for each observation,
+then plot these against the values of <b>both</b> explanatory variables
+using the <b><rcmd0>symbols</rcmd0></b> to create a <b>bubbleplot</b>.
+The estimated conditional probability of an ESR value larger than 20 is obtained by:
+</p>
+
+<p>
+<b>
+<rcmd>prob &lt;- predict(plasma.glm.2, type = "response")</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+and then assign a larger circle to observations with larger probability:
+</p>
+
+<p>
+<b>
+<rcmd>plot(globulin ~ fibrinogen, data = plasma, xlim = c(2,6), ylim = c(25,55), pch = "*")</rcmd>
+<br>
+<rcmd>symbols(plasma$fibrinogen, plasma$globulin, circles = prob, add = TRUE)</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+This plot shows an increasing probability of ESR bigger than 20 (larger circles) 
+with increasing fibrinogen and, to a lesser extent, with increasing gamma globulin.
+</p>
+
+<p style="text-align: justify;">
+Briefly summarize your findings.
+</p>
+
+
+<br>
+
+<h2>Colon polyps data</h2>
+
+<p style="text-align: justify;">
+Load the <rcmd0>polyps</rcmd0> data and read the help. 
+</p>
+
+<p style="text-align: justify;">
+You will see that the response variable is
+a <i>count</i>. We have already used multiple regression to model a numerical response that
+is <i>continuous</i>, but there are problems with using this approach for count data: a count
+can only take on <i>positive</i> values, and a count is unlikely to be <i>normally distributed</i>.
+So here, we will fit a GLM with a <i>log link function</i>, thus ensuring that the fitted values
+are positive, and with a <i>Poisson error</i> distribution - i.e., <b>Poisson regression</b>:
+
+</p><p>
+<b>
+<rcmd>data("polyps", package = "HSAUR3")</rcmd>
+<br>
+<rcmd>polyps.glm.1 &lt;- glm(number ~ treat + age, data = polyps, family = poisson())</rcmd>
+</b>
+</p>
+
+
+<p style="text-align: justify;">
+By default, the <b>link</b> function for the Poisson family is the 
+<b>log</b> function. 
+</p>
+
+<p style="text-align: justify;">
+Look at the results of the fitting (<b><rcmd0>summary</rcmd0></b>). Does there seem to be 
+a larger variance in observed counts than expected from the Poisson assumption? How can you tell?
+</p>
+
+<p style="text-align: justify;">
+Now use the <i>quasi-likelihood</i> approach to deal with this over-dispersion, by specifying 
+the <b><rcmd0>quasipoisson</rcmd0></b> family:
+</p>
+
+
+<p>
+<b>
+<rcmd>polyps.glm.2 &lt;- glm(number ~ treat + age, data = polyps, family = quasipoisson())</rcmd>
+</b>
+</p>
+
+<p style="text-align: justify;">
+then look at the results of the fitting. How do these results compare with those of the first fitting? 
+Can you explain why they are different?
+</p>
+
+<p>
+Briefly summarize your results and conclusions: does the drug treatment appear to be effective in reducing 
+the number of polyps? Does the age of the patient have a large effect?
+</p>
+
+
+<p>
+&nbsp;
+<br>
+&nbsp;
+</p>
+
+
+
+
+<div id="ghostery-tracker-tally" class="ghostery-bottom ghostery-right ghostery-none ghostery-collapsed"><div id="ghostery-box"><div id="ghostery-count" style="background: none; color: rgb(255, 255, 255);">0</div><div id="ghostery-pb-icons-container"><span id="ghostery-breaking-tracker" class="ghostery-pb-tracker" title="Broken Page Trackers" style="background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQwICgzMzc2MikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+DQogICAgPHRpdGxlPmJyZWFraW5ncGFnZTwvdGl0bGU+DQogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+DQogICAgPGRlZnM+PC9kZWZzPg0KICAgIDxnIGlkPSJQdXJwbGUtQm94IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4NCiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQxNi4wMDAwMDAsIC00NTMuMDAwMDAwKSIgaWQ9ImJhbSEtYnJlYWtpbmctdGhlLXBhZ2UtY29weS0yIiBmaWxsPSIjRkNCQTMzIj4NCiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxNi4wMDAwMDAsIDQ1My4wMDAwMDApIj4NCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOSwwLjE5NTY1MjE3NCBDNC4xNDQzNjAyNSwwLjE5NTY1MjE3NCAwLjE5NTY1MjE3NCw0LjE0NDM2MDI1IDAuMTk1NjUyMTc0LDkgQzAuMTk1NjUyMTc0LDEzLjg1NTYzOTggNC4xNDQzNjAyNSwxNy44MDQzNDc4IDksMTcuODA0MzQ3OCBDMTMuODU1NjM5OCwxNy44MDQzNDc4IDE3LjgwNDM0NzgsMTMuODU1NjM5OCAxNy44MDQzNDc4LDkgQzE3LjgwNDM0NzgsNC4xNDQzNjAyNSAxMy44NTU2Mzk4LDAuMTk1NjUyMTc0IDksMC4xOTU2NTIxNzQgWiBNMTEuNDg1NTg5OSwxMy40MTA0NDQxIEwxMS4wNzcwNzk4LDEzLjAyMDY3NjggTDEyLjEwMDQ3MTEsMTIuMjE2OTU3OSBMMTEuMDQ2MjQ1MSwxMi4yMTY5NTc5IEwxMS4yMzQ0NzgxLDEwLjg3MDcwODcgTDkuODAzMTgxNDIsMTEuNzk1NzUxMiBMOS40MDMzMzczNCw5LjM0NTA5MzkyIEw4LjY5NDc0MjY5LDExLjA4NjU1MTkgTDcuMzI1NzIwMDksMTAuMTcwOTgxNSBMNy43NTI1Njk3NywxMS45Mjk1NyBMNi41NTQyNDY3MywxMi4zMTE0Nzc1IEw3Ljg4MjM1Nzg3LDEzLjQxMDQ0NDEgTDExLjQ4NTU4OTksMTMuNDEwNDQ0MSBaIE02LjcxNTY3NTcyLDEzLjQxMDQ0NDEgTDUuMDI4NjMxOTcsMTIuMDA2NzU3NiBMNi44Njg0Mzg3MywxMS40MzE5ODE4IEw2LjE2Mzg3NDc3LDguNDg4NTczMDkgTDguMzQ5MzEyODgsOS45NTk5NzUxMiBMOS43MDQwMjY1NCw2LjYxMjQ5MDE1IEwxMC4zNTAzNDcxLDEwLjU1NjcxODIgTDEyLjE5NDk5MDcsOS4zNzY1MzMyOCBMMTEuODk4OTM2OCwxMS40NzY5MjM5IEwxNC4yNjI5MzQzLDExLjQ3NjkyMzkgTDEyLjIxMjkyNzIsMTMuMDc4OTIwMiBMMTIuNTY3MjI0NSwxMy40MTA0NDQxIEwxNS4zMzEyNjc3LDEzLjQxMDQ0NDEgTDE0LjQ3Mzk0MDcsMTIuNTk4NjYzOSBMMTcuMjA3MzUwNiwxMC40NjY4MzM5IEwxMy4wNjA3ODIxLDEwLjQ2NjgzMzkgTDEzLjQ5NjI5NzcsNy4zNDg2OTUgTDExLjA5OTg1MzIsOC44Nzg5NDUwNSBMMTAuMTIxMjAyNiwyLjg5Mjc3MTMgTDcuODc3NzIyNTgsOC40MjU0OTI4NSBMNC41NzA1NDQ0Nyw2LjIwMzk4MDEgTDUuNjY1NDgwNDEsMTAuNzUwMzkyNyBMMi45NTEwMTQ3MiwxMS41OTgyNDc2IEw1LjEzNjQ1MjgzLDEzLjQxMDQ0NDEgTDYuNzE1Njc1NzIsMTMuNDEwNDQ0MSBaIiBpZD0iYnJlYWtpbmdwYWdlIj48L3BhdGg+DQogICAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4=&quot;); opacity: 0.5;"></span><span id="ghostery-slow-tracker" class="ghostery-pb-tracker" title="Slow Trackers" style="background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxN3B4IiBoZWlnaHQ9IjE3cHgiIHZpZXdCb3g9IjAgMCAxNyAxNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQwICgzMzc2MikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+DQogICAgPHRpdGxlPnNsb3d0cmFja2VyczwvdGl0bGU+DQogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+DQogICAgPGRlZnM+PC9kZWZzPg0KICAgIDxnIGlkPSJQdXJwbGUtQm94IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4NCiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM5NS4wMDAwMDAsIC00NTQuMDAwMDAwKSIgaWQ9InNsb3d0cmFja2VycyIgZmlsbD0iI0ZDQkEzMyI+DQogICAgICAgICAgICA8cGF0aCBkPSJNNDAzLjUsNDU0IEMzOTguODEyMjEsNDU0IDM5NSw0NTcuODEyMjEgMzk1LDQ2Mi41IEMzOTUsNDY3LjE4Nzc5IDM5OC44MTIyMSw0NzEgNDAzLjUsNDcxIEM0MDguMTg3NzksNDcxIDQxMiw0NjcuMTg3NzkgNDEyLDQ2Mi41IEM0MTIsNDU3LjgxMjIxIDQwOC4xODc3OSw0NTQgNDAzLjUsNDU0IFogTTQwOS42MDk1ODQsNDY1LjE3ODY1NCBDNDA5LjUzMDI1OSw0NjUuMTU0MDkgNDA4LjY3NzI4Myw0NjQuNzQ2NDIgNDA3LjU2MTA5MSw0NjQuMzYyNjM3IEM0MDguNDg0Mzc4LDQ2My43NDU2MSA0MDkuMDk0NDE4LDQ2Mi42OTM2NDUgNDA5LjA5NDQxOCw0NjEuNTAxNzMzIEM0MDkuMDk0NDE4LDQ1OS42MDU1ODEgNDA3LjU1MTQwMSw0NTguMDYyMzM4IDQwNS42NTUyNDksNDU4LjA2MjMzOCBDNDAzLjc1OTA5Nyw0NTguMDYyMzM4IDQwMi4yMTU4NTQsNDU5LjYwNTU4MSA0MDIuMjE1ODU0LDQ2MS41MDE3MzMgQzQwMi4yMTU4NTQsNDYyLjA0OTM1IDQwMi4zNDUyMDgsNDYyLjU2Njc2OSA0MDIuNTczMjY5LDQ2My4wMjY0OTcgQzQwMi43ODgwMzQsNDYzLjA2ODYzOCA0MDMuMzQ0NDQsNDYzLjE3NTIzMiA0MDQuMjIzNzgyLDQ2My4zMjM5NjggQzQwNS4yMDQ1MzUsNDYzLjQ5MDI4MSA0MDUuODUyNDM2LDQ2My4zNTY0MTkgNDA2LjM5MTAzOSw0NjIuODc2NjM0IEM0MDYuNzI4MTcyLDQ2Mi41NzY0NTkgNDA2LjkyODA2NCw0NjIuMTYzNjA2IDQwNi45NTM1MjksNDYxLjcxMzc5NCBDNDA2Ljk4MDEyMSw0NjEuMjYzOTgxIDQwNi44Mjk1ODMsNDYwLjgyOTk0NCA0MDYuNTI5NDA4LDQ2MC40OTM3MTIgQzQwNi4wNDY5MTksNDU5Ljk1MjQwNSA0MDUuMjE1MTI3LDQ1OS45MDM5NTMgNDA0LjY3MjY5Myw0NjAuMzg1NTQxIEM0MDQuMjM5NTU3LDQ2MC43NzExMjYgNDA0LjE4NTAyMSw0NjEuNDQ0NDkyIDQwNC41NTIxMjcsNDYxLjg1NzM0NiBDNDA0Ljg0MDEzMyw0NjIuMTgwNTA3IDQwNS4zNjk5NDcsNDYyLjIxNzQ2NiA0MDUuNjg2Nzk5LDQ2MS45MzU3NyBDNDA1LjgwMzk4NCw0NjEuODMxODggNDA1Ljg3MzM5NCw0NjEuNjkyODM1IDQwNS44ODA2MDYsNDYxLjU0NDc3NiBDNDA1Ljg4NjY5LDQ2MS40MjQyMSA0MDUuODUwNjMzLDQ2MS4zMTA2MyA0MDUuNzgwOTk4LDQ2MS4yMzQwMDkgQzQwNS43MTg1NzQsNDYxLjE2NTUgNDA1LjYxOTE5Miw0NjEuMTI3NjQxIDQwNS41MTY4OCw0NjEuMTI4NTQyIEM0MDUuNDI5ODkyLDQ2MS4xMzEwMjEgNDA1LjMxNzIxNCw0NjEuMTY1NSA0MDUuMjQ0MTk4LDQ2MS4yMzc2MTUgQzQwNS4yMjYzOTUsNDYxLjI1NDI5MSA0MDUuMjA0NTM1LDQ2MS4yNjQ4ODMgNDA1LjE3OTc0Niw0NjEuMjY0ODgzIEM0MDUuMTI2MTExLDQ2MS4yNjQ4ODMgNDA1LjA4MzA2OCw0NjEuMjE2NDMxIDQwNS4wODMwNjgsNDYxLjE1NzYxMyBDNDA1LjA4MzA2OCw0NjEuMTIxMzMxIDQwNS4wOTc5NDEsNDYxLjA5NDk2NCA0MDUuMTE2NDIxLDQ2MS4wNjk0OTggQzQwNS4yMjYzOTUsNDYwLjkxODk2IDQwNS4zODE0NCw0NjAuODMxNzQ3IDQwNS41MzUzNTksNDYwLjgxODY3NiBDNDA1Ljc0NDAzOSw0NjAuODAxMDk5IDQwNS45MTMwNTcsNDYwLjg2MDgxOCA0MDYuMDQ2OTE5LDQ2MS4wMDc3NTEgQzQwNi4xNzk4NzksNDYxLjE1NDAwNyA0MDYuMjQ5Mjg5LDQ2MS4zNDg0OSA0MDYuMjM3MTIsNDYxLjU2MzI1NSBDNDA2LjIyMzgyNCw0NjEuODA2MTkgNDA2LjExMjk0OCw0NjIuMDMyNDQ4IDQwNS45MjM2NDksNDYyLjIwMDU2NCBDNDA1LjQ1NzE2LDQ2Mi42MTYxMjIgNDA0LjcwNzE3Myw0NjIuNTY2MDkzIDQwNC4yODU1Myw0NjIuMDkzMjk0IEM0MDMuNzg5NzQ1LDQ2MS41MzU5ODcgNDAzLjg1ODQ3OSw0NjAuNjMyMDgxIDQwNC40MzUxNjcsNDYwLjExNzgxNyBDNDA1LjEyMzQwNyw0NTkuNTA1Mjk3IDQwNi4xODI1ODQsNDU5LjU2NjgyIDQwNi43OTQyMDIsNDYwLjI1NTI4NCBDNDA3LjE1NzAyNiw0NjAuNjYyNzMgNDA3LjM0MDAxNiw0NjEuMTg4MjYyIDQwNy4zMDg0NjYsNDYxLjczMzE3NCBDNDA3LjI3NjY5MSw0NjIuMjc4OTg4IDQwNy4wMzQ2NTgsNDYyLjc3OTA1NSA0MDYuNjI2OTg3LDQ2My4xNDE2NTQgQzQwNi4xNjgzODYsNDYzLjU1MDIyNiA0MDUuNjMyMjYyLDQ2My43NDY1MTIgNDA0Ljk0NjUwMiw0NjMuNzQ2NTEyIEM0MDQuNzA1MzcsNDYzLjc0NjUxMiA0MDQuNDQ0ODU3LDQ2My43MjE3MjIgNDA0LjE2MzE2Miw0NjMuNjc0Mzk3IEM0MDMuMTkyMDk5LDQ2My41MDk2NjIgNDAyLjE1NTAwNyw0NjMuMzI0ODY5IDQwMi4wMTU5NjIsNDYzLjMwNTQ4OCBDNDAxLjMxNzEzMSw0NjMuMjEyMTkxIDQwMC43MzYxNjEsNDYyLjczNzU4OSA0MDAuNzE3NjgyLDQ2Mi4wMzk2NTkgTDQwMC44OTQ1ODcsNDU4Ljk4NzY1MyBDNDAwLjg5NDU4Nyw0NTguNzkxMzY3IDQwMC43MzUyNiw0NTguNjMxMTM4IDQwMC41MzgwNzIsNDU4LjYzMTEzOCBDNDAwLjM0MDg4NSw0NTguNjMxMTM4IDQwMC4xODE1NTgsNDU4Ljc5MDQ2NSA0MDAuMTgxNTU4LDQ1OC45ODc2NTMgQzQwMC4xODE1NTgsNDU4Ljk4NzY1MyA0MDAuMjg1NDQ3LDQ2MC44NDE0MzcgNDAwLjI5NzYxNyw0NjEuMDc1NTgzIEM0MDAuMzIwNjAzLDQ2MS41MjAyMTIgMzk5LjkxMTEzLDQ2MS44NzY3MjYgMzk5LjQ2MDQxNiw0NjEuODc2NzI2IEMzOTguOTk4NDM1LDQ2MS44NzY3MjYgMzk4LjU4NzE1OSw0NjEuNTAwODMxIDM5OC42MjM0NDEsNDYxLjAzOTUyNiBDMzk4LjY0MzQ5OCw0NjAuNzg0MTk3IDM5OC42NjQ2ODIsNDYwLjUyMDA3OSAzOTguNjg1ODY1LDQ2MC4yNzI4NjIgTDM5OC43NTk3ODIsNDU5LjAwOTUxMiBDMzk4Ljc1OTc4Miw0NTguODEzMjI2IDM5OC42MDA0NTUsNDU4LjY1Mjk5OCAzOTguNDAzMjY4LDQ1OC42NTI5OTggQzM5OC4yMDYwOCw0NTguNjUyOTk4IDM5OC4wNDY3NTMsNDU4LjgxMjMyNSAzOTguMDQ2NzUzLDQ1OS4wMDk1MTIgTDM5OC4yMjAyNzgsNDYxLjk5OTk5NyBMMzk4LjIyMDI3OCw0NjIuMDA1MTggQzM5OC4yMjAyNzgsNDY0LjA5NzYxNyAzOTkuNDE3MzczLDQ2NS44MDI4OTIgNDAxLjUxMDcxMiw0NjUuODAxMDg5IEM0MDMuNjIyNTMxLDQ2NS43OTgzODUgNDA5LjYwODY4Myw0NjUuODAxMDg5IDQwOS42MDg2ODMsNDY1LjgwMTA4OSBDNDA5Ljc4MTA4MSw0NjUuODAxMDg5IDQwOS45MjAzNTEsNDY1LjY2MTE0MyA0MDkuOTIwMzUxLDQ2NS40ODk0MjEgQzQwOS45MjAzNTEsNDY1LjMxNzAyMyA0MDkuNzczMTkzLDQ2NS4yMzA3MTEgNDA5LjYwOTU4NCw0NjUuMTc4NjU0IFoiPjwvcGF0aD4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg==&quot;); opacity: 0.5;"></span><span id="ghostery-non-secure-tracker" class="ghostery-pb-tracker" title="Non-secure Trackers" style="background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQwICgzMzc2MikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+DQogICAgPHRpdGxlPndhcm5pbmc8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxkZWZzPjwvZGVmcz4NCiAgICA8ZyBpZD0iUHVycGxlLUJveCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+DQogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNzMuMDAwMDAwLCAtNDUzLjAwMDAwMCkiIGlkPSJ3YXJuaW5nIiBmaWxsPSIjRkVCMDMyIj4NCiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM3My4wMDAwMDAsIDQ1My4wMDAwMDApIj4NCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOSwwLjYzMDQzNDc4MyBDNC4zODQxNDQ5MywwLjYzMDQzNDc4MyAwLjYzMDQzNDc4Myw0LjM4NDE0NDkzIDAuNjMwNDM0NzgzLDkgQzAuNjMwNDM0NzgzLDEzLjYxNTg1NTEgNC4zODQxNDQ5MywxNy4zNjk1NjUyIDksMTcuMzY5NTY1MiBDMTMuNjE1ODU1MSwxNy4zNjk1NjUyIDE3LjM2OTU2NTIsMTMuNjE1ODU1MSAxNy4zNjk1NjUyLDkgQzE3LjM2OTU2NTIsNC4zODQxNDQ5MyAxMy42MTU4NTUxLDAuNjMwNDM0NzgzIDksMC42MzA0MzQ3ODMgWiBNNC42NDI5MjgxMSwxMS43ODk4NTUxIEM1LjI1MDQxMTY1LDExLjc4OTg1NTEgNS43NTY5NTIzNCwxMS4zNjA3NTY3IDUuODc4NzE2OTMsMTAuODgxMzY5NSBDNi4wMDA0ODE1MiwxMS4zNjEyNDM3IDYuNTA3MDIyMjIsMTEuNzIzNzM2OSA3LjExNDM4NCwxMS43MjM3MzY5IEM3LjcyNDE4MTA2LDExLjcyMzczNjkgOC4yMzI2Njk5OSwxMS4zNjUwMTg0IDguMzUxNTEyMjMsMTAuODgyNzA4OSBDOC40NzA5NjMzLDExLjM2NTAxODQgOC45Nzk0NTIyMywxMS43MzY1MjIyIDkuNTg4NzYyMjQsMTEuNzM2NTIyMiBDMTAuMTk0NjYyOCwxMS43MzY1MjIyIDEwLjcwMTIwMzUsMTEuMzk0OTcyNSAxMC44MjM0NTUyLDEwLjkxNjU1OTQgQzEwLjk0NTcwNjgsMTEuMzk0OTcyNSAxMS40NTIyNDc1LDExLjc4OTM2OCAxMi4wNTgyNjk5LDExLjc4OTM2OCBDMTIuMzUzNjcwOCwxMS43ODkzNjggMTIuNjI0NzE4OCwxMS42OTkzODQgMTIuODM5NzU1LDExLjU1OTU5ODIgQzExLjAwOTUxMTUsOC43MTgwOTk3NSAxMi4xNDUzMzE2LDQuMTM3NjgxMTYgMTIuMTQ1MzMxNiw0LjEzNzY4MTE2IEM2Ljk0NjQ3MDYzLDUuMjMxNjE0MjQgNC42NjU4MTk4NSwxMC4xMDAzNzE0IDQuMDU3OTcxMDEsMTEuNjY2MTQyMiBDNC4yMzI5NDY3MywxMS43NDMyMTkyIDQuNDMxNzg4MzEsMTEuNzg5ODU1MSA0LjY0MjkyODExLDExLjc4OTg1NTEgWiIgaWQ9Indhcm5pbmd0cmFja2VycyI+PC9wYXRoPg0KICAgICAgICAgICAgPC9nPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+&quot;); opacity: 0.5;"></span></div><div id="ghostery-title">Looking</div><div id="ghostery-minimize"><span id="ghostery-minimize-icon"></span></div><span id="ghostery-close" style="background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxNXB4IiBoZWlnaHQ9IjE1cHgiIHZpZXdCb3g9IjAgMCAxNSAxNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDMuNy4yICgyODI3NikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+DQogICAgPHRpdGxlPmNvbGxhcHNlIGNvcHkgMjwvdGl0bGU+DQogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+DQogICAgPGRlZnM+PC9kZWZzPg0KICAgIDxnIGlkPSJQdXJwbGUtQm94IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4NCiAgICAgICAgPGcgaWQ9ImNvbGxhcHNlLWNvcHktMiI+DQogICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLTMxNSIgZmlsbC1vcGFjaXR5PSIwLjI3MDE1Mzk4NiIgZmlsbD0iI0Q4RDhEOCIgY3g9IjcuNSIgY3k9IjcuNSIgcj0iNy41Ij48L2NpcmNsZT4NCiAgICAgICAgICAgIDxwYXRoIGQ9Ik00LjM2LDQuMzYgTDEwLjU3NDU2MzQsMTAuNTc0NTYzNCIgaWQ9IkxpbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSI+PC9wYXRoPg0KICAgICAgICAgICAgPHBhdGggZD0iTTQuMzYsNC4zNiBMMTAuNTc0NTYzNCwxMC41NzQ1NjM0IiBpZD0iTGluZS1Db3B5IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcuNjAwMDAwLCA3LjYwMDAwMCkgc2NhbGUoLTEsIDEpIHRyYW5zbGF0ZSgtNy42MDAwMDAsIC03LjYwMDAwMCkgIj48L3BhdGg+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4=&quot;);"></span></div><div id="ghostery-pb-background"><div id="ghostery-trackerList"></div></div></div></body><script type="text/javascript" id="webrtc-control">(function () {
+      if (typeof navigator.getUserMedia !== "undefined") navigator.getUserMedia = undefined;
+      if (typeof window.MediaStreamTrack !== "undefined") window.MediaStreamTrack = undefined;
+      if (typeof window.RTCPeerConnection !== "undefined") window.RTCPeerConnection = undefined;
+      if (typeof window.RTCSessionDescription !== "undefined") window.RTCSessionDescription = undefined;
+      //
+      if (typeof navigator.mozGetUserMedia !== "undefined") navigator.mozGetUserMedia = undefined;
+      if (typeof window.mozMediaStreamTrack !== "undefined") window.mozMediaStreamTrack = undefined;
+      if (typeof window.mozRTCPeerConnection !== "undefined") window.mozRTCPeerConnection = undefined;
+      if (typeof window.mozRTCSessionDescription !== "undefined") window.mozRTCSessionDescription = undefined;
+      //
+      if (typeof navigator.webkitGetUserMedia !== "undefined") navigator.webkitGetUserMedia = undefined;
+      if (typeof window.webkitMediaStreamTrack !== "undefined") window.webkitMediaStreamTrack = undefined;
+      if (typeof window.webkitRTCPeerConnection !== "undefined") window.webkitRTCPeerConnection = undefined;
+      if (typeof window.webkitRTCSessionDescription !== "undefined") window.webkitRTCSessionDescription = undefined;
+    })(); </script><div id="vimeo-screen-recorder-container"></div><div id="motion-extension" class="motion-extension-div" style="visibility: hidden;"><div class="motion-extension-div no-print"><iframe id="motion-intervention-iframe" class="motion-iframe" style="visibility: hidden;" src="./lab-w05_files/saved_resource.html"></iframe><iframe class="motion-iframe" id="motion-generic-notification-iframe" src="./lab-w05_files/saved_resource(1).html"></iframe></div></div></html>
